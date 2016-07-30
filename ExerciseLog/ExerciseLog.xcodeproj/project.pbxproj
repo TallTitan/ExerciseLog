@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150A44251D4D2A2A009F996E /* ExerciseFileLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 150A44241D4D2A2A009F996E /* ExerciseFileLog.m */; };
+		150A44281D4D6222009F996E /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 150A44271D4D6222009F996E /* NavigationController.m */; };
+		150A442B1D4D6532009F996E /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 150A442A1D4D6532009F996E /* AddViewController.m */; };
 		B7A126FC1D4C4604001BE54F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A126FB1D4C4604001BE54F /* main.m */; };
 		B7A126FF1D4C4604001BE54F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A126FE1D4C4604001BE54F /* AppDelegate.m */; };
 		B7A127051D4C4604001BE54F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A127031D4C4604001BE54F /* Main.storyboard */; };
@@ -18,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		150A44231D4D2A2A009F996E /* ExerciseFileLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseFileLog.h; sourceTree = "<group>"; };
+		150A44241D4D2A2A009F996E /* ExerciseFileLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseFileLog.m; sourceTree = "<group>"; };
+		150A44261D4D6222009F996E /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		150A44271D4D6222009F996E /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		150A44291D4D6532009F996E /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		150A442A1D4D6532009F996E /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
 		B7A126F71D4C4604001BE54F /* ExerciseLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExerciseLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A126FB1D4C4604001BE54F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B7A126FD1D4C4604001BE54F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		150A44221D4D2A04009F996E /* FileIO */ = {
+			isa = PBXGroup;
+			children = (
+				150A44231D4D2A2A009F996E /* ExerciseFileLog.h */,
+				150A44241D4D2A2A009F996E /* ExerciseFileLog.m */,
+			);
+			name = FileIO;
+			sourceTree = "<group>";
+		};
 		B7A126EE1D4C4604001BE54F = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +82,7 @@
 		B7A126F91D4C4604001BE54F /* ExerciseLog */ = {
 			isa = PBXGroup;
 			children = (
+				150A44221D4D2A04009F996E /* FileIO */,
 				B7A127151D4C47CD001BE54F /* Model */,
 				B7A127141D4C46DB001BE54F /* UI */,
 				B7A126FD1D4C4604001BE54F /* AppDelegate.h */,
@@ -90,6 +109,10 @@
 				B7A127111D4C46D1001BE54F /* TableViewController.h */,
 				B7A127121D4C46D1001BE54F /* TableViewController.m */,
 				B7A127031D4C4604001BE54F /* Main.storyboard */,
+				150A44261D4D6222009F996E /* NavigationController.h */,
+				150A44271D4D6222009F996E /* NavigationController.m */,
+				150A44291D4D6532009F996E /* AddViewController.h */,
+				150A442A1D4D6532009F996E /* AddViewController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -136,6 +159,7 @@
 				TargetAttributes = {
 					B7A126F61D4C4604001BE54F = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = J8N3H4395D;
 					};
 				};
 			};
@@ -179,7 +203,10 @@
 				B7A126FF1D4C4604001BE54F /* AppDelegate.m in Sources */,
 				B7A126FC1D4C4604001BE54F /* main.m in Sources */,
 				B7A127131D4C46D1001BE54F /* TableViewController.m in Sources */,
+				150A442B1D4D6532009F996E /* AddViewController.m in Sources */,
+				150A44251D4D2A2A009F996E /* ExerciseFileLog.m in Sources */,
 				B7A1271B1D4C4896001BE54F /* ModelManager.m in Sources */,
+				150A44281D4D6222009F996E /* NavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ExerciseLog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seanschiff.ExerciseLog;
@@ -302,6 +330,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ExerciseLog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seanschiff.ExerciseLog;
@@ -328,6 +357,7 @@
 				B7A127101D4C4604001BE54F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

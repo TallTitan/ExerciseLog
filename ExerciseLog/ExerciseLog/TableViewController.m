@@ -7,6 +7,7 @@
 //
 
 #import "TableViewController.h"
+#import "AddViewController.h"
 
 @interface TableViewController ()
 
@@ -21,12 +22,19 @@
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addButtonPressed:)];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)addButtonPressed:(id)sender {
+    UIViewController* controller = [self.storyboard instantiateViewControllerWithIdentifier:@"addNavigationID"];
+//    [self.navigationController pushViewController:controller animated:YES];
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 #pragma mark - Table view data source
